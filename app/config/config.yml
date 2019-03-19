@@ -297,13 +297,12 @@ sonata_admin:
                     - sonata.user.admin.user
                     - sonata.user.admin.group
 
-            event:
-                roles: [ROLE_SUPER_ADMIN]
-                label: Eventos
-                icon: '<i class="fa fa-id-badge"></i>'
+            school:
+                label: Schools
+                icon: '<i class="fa fa-school"></i>'
                 on_top: true
                 items:
-                  - app.admin.event
+                    - app.admin.school
 
             sonata.admin.group.media:
                 roles:                 [ROLE_SUPER_ADMIN]

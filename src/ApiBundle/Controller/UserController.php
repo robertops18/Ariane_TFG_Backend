@@ -33,94 +33,12 @@ class UserController extends FOSRestController
     {
         $em = $this->getDoctrine()->getManager();
         $user = $em->getRepository('ApplicationSonataUserBundle:User')->find($this->getUser()->getId());
-        $group = $user->getCategory()->getDepartment()->getGroup();
-
-        $repository = $em->getRepository('AppBundle:Document');
-
-        $idGroup = $user->getCategory()->getDepartment()->getGroup()->getID();
-        $idDpto = $user->getCategory()->getDepartment()->getID();
-        $idCategory = $user->getCategory()->getID();
-
-        if (!$idGroup || !$idDpto || !$idCategory) {
-            $view = $this->view([], Response::HTTP_OK);
-            return $this->handleView($view);
-        }
-
-
-        // First we get all the documents associated with the user group
-        $query = $repository->createQueryBuilder('g_d')
-            ->innerJoin('g_d.groups', 'g')
-            ->where('g.id = :idGroup')
-            ->setParameter('idGroup', $idGroup)
-            ->getQuery();
-
-
-        $documents_groups = $query->getResult();
-
-
-        $query = $repository->createQueryBuilder('d_d')
-            ->innerJoin('d_d.departments', 'dp')
-            ->where('dp.id = :idDepartment')
-            ->setParameter('idDepartment', $idDpto)
-            ->getQuery();
-
-        $documents_department = $query->getResult();
-
-
-        $query = $repository->createQueryBuilder('d_c')
-            ->innerJoin('d_c.categories', 'c')
-            ->where('c.id = :idCategory')
-            ->setParameter('idCategory', $idCategory)
-            ->getQuery();
-
-        $documents_category = $query->getResult();
-
-        $query = $repository->createQueryBuilder('d_u')
-            ->innerJoin('d_u.users', 'u')
-            ->where('u.id = :idUser')
-            ->setParameter('idUser', $user->getID())
-            ->getQuery();
-
-        $documents_user = $query->getResult();
-
-
-        $result = array_merge($documents_user, $documents_category, $documents_department, $documents_groups);
-        $result = array_unique($result);
-
-
-        $result = array_values(array_map(function ($doc) {
-
-            $media = $doc->getPdf();
-            $provider = $this->container->get($media->getProviderName());
-            $format = $provider->getFormatName($media, 'reference');
-            return [
-                "doc_id" => $doc->getId(),
-                "title" => $doc->getDocumentTitle(),
-                "pdf" => $provider->generatePublicUrl($media, $format)
-
-            ];
-
-        }, $result));
-
-
-        $avatarUrl = null;
-
-        if ($user->getAvatar() != null) {
-            $media = $user->getAvatar();
-            $provider = $this->container->get($media->getProviderName());
-            $format = $provider->getFormatName($media, 'reference');
-            $avatarUrl = $provider->generatePublicUrl($media, $format);
-        }
 
         $data = [
             'username' => $user->getUsername(),
             'email' => $user->getEmail(),
-            'group' => ['id' => $group->getId(), 'name' => $group->getName()],
-            'department' => ['id' => $user->getCategory()->getDepartment()->getId(), 'name' => $user->getCategory()->getDepartment()->getName()],
-            'category' => ['id' => $user->getCategory()->getId(), 'name' => $user->getCategory()->getName()],
-            'documents' => $result,
-            'avatar' => $avatarUrl
-
+            'name' => $user->getFirstname(),
+            'surname' => $user->getLastname()
         ];
 
         $view = $this->view(['profile' => $data], Response::HTTP_OK);
