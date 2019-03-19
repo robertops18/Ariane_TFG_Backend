@@ -41,7 +41,7 @@ class School extends Base
 
     public function __toString()
     {
-        return $this->getSchoolName();
+        return (string) $this->getSchoolName();
     }
 
 
