@@ -298,11 +298,16 @@ sonata_admin:
                     - sonata.user.admin.group
 
             school:
-                label: Schools
-                icon: '<i class="fa fa-school"></i>'
-                on_top: true
+                label:                  Schools
+                icon:                   '<i class="fa fa-briefcase"></i>'
                 items:
                     - app.admin.school
+
+            field:
+                label:                  Field activities
+                icon:                   '<i class="fa fa-street-view"></i>'
+                items:
+                    - app.admin.field
 
             sonata.admin.group.media:
                 roles:                 [ROLE_SUPER_ADMIN]

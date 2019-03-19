@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: robertoperez
  * Date: 2019-03-19
- * Time: 16:14
+ * Time: 17:25
  */
 
 namespace AppBundle\Admin;
@@ -15,7 +15,7 @@ use Sonata\AdminBundle\Form\FormMapper;
 use Sonata\AdminBundle\Show\ShowMapper;
 use Sonata\AdminBundle\Route\RouteCollection;
 
-class SchoolAdmin extends AbstractAdmin
+class FieldAdmin extends AbstractAdmin
 {
     protected function configureRoutes(RouteCollection $collection) {
         //$collection->remove('show');
@@ -30,16 +30,18 @@ class SchoolAdmin extends AbstractAdmin
     protected function configureDatagridFilters(DatagridMapper $datagridMapper) {
         $datagridMapper
             ->add('id')
-            ->add('schoolName')
-            ->add('createdAt')
+            ->add('fieldTitle')
+            ->add('duration')
+            ->add('schoolId')
         ;
     }
 
     protected function configureListFields(ListMapper $listMapper) {
         $listMapper
             ->add('id')
-            ->add('schoolName')
-            ->add('createdAt')
+            ->add('fieldTitle')
+            ->add('duration')
+            ->add('schoolId')
             ->add('_action', null, [
                 'actions' => [
                     'show' => [],
@@ -52,15 +54,18 @@ class SchoolAdmin extends AbstractAdmin
 
     protected function configureFormFields(FormMapper $formMapper) {
         $formMapper
-            ->add('schoolName')
+            ->add('fieldTitle')
+            ->add('duration')
+            ->add('schoolId')
         ;
     }
 
     protected function configureShowFields(ShowMapper $showMapper) {
         $showMapper
             ->add('id')
-            ->add('schoolName')
-            ->add('createdAt')
+            ->add('fieldTitle')
+            ->add('duration')
+            ->add('schoolId')
         ;
     }
 }
