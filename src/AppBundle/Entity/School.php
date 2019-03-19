@@ -28,7 +28,7 @@ class School extends Base
      */
     public function getSchoolName()
     {
-        return $this->getSchoolName();
+        return $this->schoolName;
     }
 
     /**
