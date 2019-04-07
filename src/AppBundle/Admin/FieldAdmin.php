@@ -31,8 +31,11 @@ class FieldAdmin extends AbstractAdmin
         $datagridMapper
             ->add('id')
             ->add('fieldTitle')
-            ->add('duration')
-            ->add('schoolId')
+            ->add('initDate')
+            ->add('finishDate')
+            ->add('school')
+            ->add('students')
+            ->add('teacher')
         ;
     }
 
@@ -40,8 +43,11 @@ class FieldAdmin extends AbstractAdmin
         $listMapper
             ->add('id')
             ->add('fieldTitle')
-            ->add('duration')
-            ->add('schoolId')
+            ->add('initDate')
+            ->add('finishDate')
+            ->add('school')
+            ->add('students')
+            ->add('teacher')
             ->add('_action', null, [
                 'actions' => [
                     'show' => [],
@@ -55,8 +61,11 @@ class FieldAdmin extends AbstractAdmin
     protected function configureFormFields(FormMapper $formMapper) {
         $formMapper
             ->add('fieldTitle')
-            ->add('duration')
-            ->add('schoolId')
+            ->add('initDate')
+            ->add('finishDate')
+            ->add('school')
+            ->add('students')
+            ->add('teacher')
         ;
     }
 
@@ -64,8 +73,11 @@ class FieldAdmin extends AbstractAdmin
         $showMapper
             ->add('id')
             ->add('fieldTitle')
-            ->add('duration')
-            ->add('schoolId')
+            ->add('initDate')
+            ->add('finishDate')
+            ->add('school')
+            ->add('students')
+            ->add('teacher')
         ;
     }
 }
