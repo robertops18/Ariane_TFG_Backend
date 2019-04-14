@@ -14,9 +14,23 @@ services:
       - { name: sonata.admin, manager_type: orm, group: admin, label: School }
     public: true
 
-  app.admin.field:
+  app.admin.fieldactivities:
     class: AppBundle\Admin\FieldAdmin
-    arguments: [~, AppBundle\Entity\Field, Sonata\AdminBundle\Controller\CRUDController]
+    arguments: [~, AppBundle\Entity\FieldActivity, Sonata\AdminBundle\Controller\CRUDController]
     tags:
-      - { name: sonata.admin, manager_type: orm, group: admin, label: Field }
+      - { name: sonata.admin, manager_type: orm, group: admin, label: Field activities }
+    public: true
+
+  app.admin.task:
+    class: AppBundle\Admin\TaskAdmin
+    arguments: [~, AppBundle\Entity\Task, Sonata\AdminBundle\Controller\CRUDController]
+    tags:
+      - { name: sonata.admin, manager_type: orm, group: admin, label: Tasks }
+    public: true
+
+  app.admin.answer:
+    class: AppBundle\Admin\AnswerAdmin
+    arguments: [~, AppBundle\Entity\Answer, Sonata\AdminBundle\Controller\CRUDController]
+    tags:
+      - { name: sonata.admin, manager_type: orm, group: admin, label: Answers }
     public: true

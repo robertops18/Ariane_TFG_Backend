@@ -304,19 +304,21 @@ sonata_admin:
                     - app.admin.school
 
             field:
-                label:                  Field activities
+                label:                  Activities
                 icon:                   '<i class="fa fa-street-view"></i>'
                 items:
-                    - app.admin.field
+                    - app.admin.fieldactivities
+                    - app.admin.task
+                    - app.admin.answer
 
-            sonata.admin.group.media:
-                roles:                 [ROLE_SUPER_ADMIN]
-                label:                sonata_media
-                label_catalogue:      SonataMediaBundle
-                icon:                 '<i class="fa fa-image"></i>'
-                items:
-                    - sonata.media.admin.media
-                    - sonata.media.admin.gallery
+#            sonata.admin.group.media:
+#                roles:                 [ROLE_SUPER_ADMIN]
+#                label:                sonata_media
+#                label_catalogue:      SonataMediaBundle
+#                icon:                 '<i class="fa fa-image"></i>'
+#                items:
+#                    - sonata.media.admin.media
+#                    - sonata.media.admin.gallery
 
 #            sonata.admin.group.classification:
 #                roles:                 [ROLE_SUPER_ADMIN]

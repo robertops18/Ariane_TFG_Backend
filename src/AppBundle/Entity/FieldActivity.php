@@ -11,15 +11,15 @@ namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Field
+ * FieldActivity
  *
  * @ORM\Table(name="field_activities")
  * @ORM\Entity()
  */
-class Field extends Base
+class FieldActivity extends Base
 {
     /**
-     * @ORM\Column(name="title", type="string")
+     * @ORM\Column(name="name", type="string")
      */
     protected $fieldTitle;
 

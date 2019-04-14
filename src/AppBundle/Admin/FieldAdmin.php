@@ -31,8 +31,16 @@ class FieldAdmin extends AbstractAdmin
         $datagridMapper
             ->add('id')
             ->add('fieldTitle')
-            ->add('initDate')
-            ->add('finishDate')
+            ->add('initDate', 'doctrine_orm_date_range',
+                array('label' => 'Init Date',
+                    'field_type' => 'sonata_type_date_range_picker',
+                    'advanced_filter' => false), 'sonata_type_date_range_picker',
+                array('field_options_start' => array('format' => 'dd/MM/yyyy'), 'field_options_end' => array('format' => 'dd/MM/yyyy')))
+            ->add('finishDate', 'doctrine_orm_date_range',
+                array('label' => 'Finish Date',
+                    'field_type' => 'sonata_type_date_range_picker',
+                    'advanced_filter' => false), 'sonata_type_date_range_picker',
+                array('field_options_start' => array('format' => 'dd/MM/yyyy'), 'field_options_end' => array('format' => 'dd/MM/yyyy')))
             ->add('school')
             ->add('students')
             ->add('teacher')

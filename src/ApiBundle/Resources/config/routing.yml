@@ -3,6 +3,11 @@ user_api:
     resource: "@ApiBundle/Controller/UserController.php"
     prefix: /user
 
+field_activities_api:
+    type: annotation
+    resource: "@ApiBundle/Controller/FieldActivityController.php"
+    prefix: /field-activity
+
 util_api:
     type: annotation
     resource: "@ApiBundle/Controller/UtilsController.php"
