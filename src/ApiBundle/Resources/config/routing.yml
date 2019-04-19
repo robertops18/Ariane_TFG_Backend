@@ -8,6 +8,11 @@ field_activities_api:
     resource: "@ApiBundle/Controller/FieldActivityController.php"
     prefix: /field-activity
 
+answers_api:
+    type: annotation
+    resource: "@ApiBundle/Controller/AnswerController.php"
+    prefix: /answer
+
 util_api:
     type: annotation
     resource: "@ApiBundle/Controller/UtilsController.php"

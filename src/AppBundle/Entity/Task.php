@@ -40,6 +40,31 @@ class Task extends Base
     protected $fieldActivity;
 
     /**
+     * @ORM\Column(name="num_answers", type="integer")
+     */
+    protected $numberOfAnswers;
+
+    /**
+     * @return mixed
+     */
+    public function getNumberOfAnswers()
+    {
+        return $this->numberOfAnswers;
+    }
+
+    /**
+     * @param mixed $numberOfAnswers
+     */
+    public function setNumberOfAnswers($numberOfAnswers)
+    {
+        $this->numberOfAnswers = $numberOfAnswers;
+    }
+
+    public function incrementAnswers() {
+        $this->numberOfAnswers += 1;
+    }
+
+    /**
      * @return mixed
      */
     public function getTaskName()

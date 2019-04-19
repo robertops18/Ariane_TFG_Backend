@@ -85,6 +85,7 @@ class UserAdmin extends AbstractAdmin
     {
         $listMapper
             ->addIdentifier('username')
+            ->add('id')
             ->add('email')
             ->add('groups')
             ->add('enabled', null, ['editable' => true])

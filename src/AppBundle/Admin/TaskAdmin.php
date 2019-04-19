@@ -35,16 +35,18 @@ class TaskAdmin extends AbstractAdmin
             ->add('type')
             ->add('question')
             ->add('fieldActivity')
+            ->add('numberOfAnswers')
         ;
     }
 
     protected function configureListFields(ListMapper $listMapper) {
         $listMapper
+            ->addIdentifier('taskName')
             ->add('id')
-            ->add('taskName')
             ->add('type')
             ->add('question')
             ->add('fieldActivity')
+            ->add('numberOfAnswers')
             ->add('_action', null, [
                 'actions' => [
                     'show' => [],
@@ -71,6 +73,7 @@ class TaskAdmin extends AbstractAdmin
             ->add('type')
             ->add('question')
             ->add('fieldActivity')
+            ->add('numberOfAnswers')
         ;
     }
 }

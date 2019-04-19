@@ -9,8 +9,6 @@
 namespace ApiBundle\Controller;
 
 
-use AppBundle\Entity\Enum\CheckInEnum;
-use AppBundle\Entity\Registry;
 use Nelmio\ApiDocBundle\Annotation\Security;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -61,10 +59,45 @@ class FieldActivityController extends FOSRestController
         $em = $this->getDoctrine()->getManager();
         $field = $em->getRepository('AppBundle:FieldActivity')->find($activityId);
         if (!$field) {
-            $view = $this->view(['error' => 'This field activity does not exist'], Response::HTTP_OK);
+            $view = $this->view(['error' => 'This field activity does not exist'], Response::HTTP_NOT_FOUND);
             return $this->handleView($view);
         }
         $view = $this->view(['result' => $field], Response::HTTP_OK);
+        return $this->handleView($view);
+    }
+
+    /** Get Field activities of the student.
+     *
+     * @Route("/student/activities",methods={"GET"})
+     * @SWG\Response(
+     *     response=200,
+     *     description="Get Field Activities of the student"
+     * )
+     * @SWG\Response(
+     *     response=404,
+     *     description="Not Found"
+     * )
+     * @SWG\Tag(name="Field Activities")
+     * @Security(name="Bearer")
+     */
+    public function getFieldActivitiesByStudent()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $user = $this->getUser();
+        $studentId = $user->getId();
+
+        $field_activities = $em->getRepository('AppBundle:FieldActivity')->findAll();
+        $filtered_activities = [];
+
+        foreach ($field_activities as $field) {
+            foreach ($field->getStudents() as $student) {
+                if ($student->getId() === $studentId) {
+                    array_push($filtered_activities, $field);
+                }
+            }
+        }
+
+        $view = $this->view(['result' => $filtered_activities], Response::HTTP_OK);
         return $this->handleView($view);
     }
 }
