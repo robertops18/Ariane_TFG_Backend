@@ -97,7 +97,7 @@ class FieldActivityController extends FOSRestController
             }
         }
 
-        $view = $this->view($filtered_activities, Response::HTTP_OK);
+        $view = $this->view(['result' => $filtered_activities], Response::HTTP_OK);
         return $this->handleView($view);
     }
 }
