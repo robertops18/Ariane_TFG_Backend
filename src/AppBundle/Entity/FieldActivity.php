@@ -34,6 +34,11 @@ class FieldActivity extends Base
     protected $finishDate;
 
     /**
+     * @ORM\Column(name="area", type="string")
+     */
+    protected $area;
+
+    /**
      * @ORM\ManyToOne(targetEntity="AppBundle\Entity\School")
      * @ORM\JoinColumn(name="school_id", referencedColumnName="id")
      */
@@ -57,6 +62,22 @@ class FieldActivity extends Base
 
     public function __construct() {
         $this->students = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getArea()
+    {
+        return $this->area;
+    }
+
+    /**
+     * @param mixed $area
+     */
+    public function setArea($area)
+    {
+        $this->area = $area;
     }
 
     /**

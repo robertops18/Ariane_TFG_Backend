@@ -41,6 +41,7 @@ class FieldAdmin extends AbstractAdmin
                     'field_type' => 'sonata_type_date_range_picker',
                     'advanced_filter' => false), 'sonata_type_date_range_picker',
                 array('field_options_start' => array('format' => 'dd/MM/yyyy'), 'field_options_end' => array('format' => 'dd/MM/yyyy')))
+            ->add('area')
             ->add('school')
             ->add('students')
             ->add('teacher')
@@ -53,6 +54,7 @@ class FieldAdmin extends AbstractAdmin
             ->add('fieldTitle')
             ->add('initDate')
             ->add('finishDate')
+            ->add('area')
             ->add('school')
             ->add('students')
             ->add('teacher')
@@ -71,6 +73,7 @@ class FieldAdmin extends AbstractAdmin
             ->add('fieldTitle')
             ->add('initDate')
             ->add('finishDate')
+            ->add('area')
             ->add('school')
             ->add('students')
             ->add('teacher')
@@ -83,6 +86,7 @@ class FieldAdmin extends AbstractAdmin
             ->add('fieldTitle')
             ->add('initDate')
             ->add('finishDate')
+            ->add('area')
             ->add('school')
             ->add('students')
             ->add('teacher')
