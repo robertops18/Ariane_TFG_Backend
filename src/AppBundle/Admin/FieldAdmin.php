@@ -58,6 +58,7 @@ class FieldAdmin extends AbstractAdmin
             ->add('school')
             ->add('students')
             ->add('teacher')
+            ->add('tasks')
             ->add('_action', null, [
                 'actions' => [
                     'show' => [],

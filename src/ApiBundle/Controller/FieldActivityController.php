@@ -100,4 +100,38 @@ class FieldActivityController extends FOSRestController
         $view = $this->view(['result' => $filtered_activities], Response::HTTP_OK);
         return $this->handleView($view);
     }
+
+    /** Get tasks of field activity.
+     *
+     * @Route("/tasks",methods={"POST"})
+     * @SWG\Response(
+     *     response=200,
+     *     description="Get Tasks"
+     * )
+     * @SWG\Response(
+     *     response=404,
+     *     description="Not Found"
+     * )
+     * @SWG\Parameter(
+     *       name="data",
+     *       in="body",
+     *       description="ID of the field activity",
+     *       required=true,
+     *              @SWG\Schema(
+     *              type="object",
+     *              @SWG\Property(property="id", type="number")
+     *          )
+     *     )
+     * @SWG\Tag(name="Field Activities")
+     * @Security(name="Bearer")
+     */
+    public function getTasksOfFieldActivity(Request $request) {
+        $fieldActivityId = $request->get('id');
+        $em = $this->getDoctrine()->getManager();
+        $field_activity = $em->getRepository('AppBundle:FieldActivity')->find($fieldActivityId);
+        $tasks = $field_activity->getTasks();
+
+        $view = $this->view(['result' => $tasks], Response::HTTP_OK);
+        return $this->handleView($view);
+    }
 }

@@ -34,7 +34,7 @@ class Task extends Base
     protected $question;
 
     /**
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\FieldActivity")
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\FieldActivity", inversedBy="tasks")
      * @ORM\JoinColumn(name="field_activity_id", referencedColumnName="id")
      */
     protected $fieldActivity;
