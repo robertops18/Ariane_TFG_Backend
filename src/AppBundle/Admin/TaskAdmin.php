@@ -9,6 +9,7 @@
 namespace AppBundle\Admin;
 
 
+use AppBundle\Entity\Enum\TaskTypeEnum;
 use Sonata\AdminBundle\Admin\AbstractAdmin;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Datagrid\ListMapper;
@@ -32,7 +33,8 @@ class TaskAdmin extends AbstractAdmin
         $datagridMapper
             ->add('id')
             ->add('taskName')
-            ->add('type')
+            ->add('type', null, array('label' => 'Type'), 'choice', array('choices' => TaskTypeEnum::getEnumArray()))
+            ->add('description')
             ->add('question')
             ->add('fieldActivity')
             ->add('numberOfAnswers')
@@ -45,6 +47,7 @@ class TaskAdmin extends AbstractAdmin
             ->add('id')
             ->add('type')
             ->add('question')
+            ->add('description')
             ->add('fieldActivity')
             ->add('numberOfAnswers')
             ->add('_action', null, [
@@ -60,7 +63,8 @@ class TaskAdmin extends AbstractAdmin
     protected function configureFormFields(FormMapper $formMapper) {
         $formMapper
             ->add('taskName')
-            ->add('type')
+            ->add('type', 'choice', array('label' => 'Type', 'choices' => TaskTypeEnum::getEnumArray()))
+            ->add('description')
             ->add('question')
             ->add('fieldActivity')
         ;
@@ -72,6 +76,7 @@ class TaskAdmin extends AbstractAdmin
             ->add('taskName')
             ->add('type')
             ->add('question')
+            ->add('description')
             ->add('fieldActivity')
             ->add('numberOfAnswers')
         ;

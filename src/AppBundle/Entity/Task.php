@@ -34,6 +34,11 @@ class Task extends Base
     protected $question;
 
     /**
+     * @ORM\Column(name="description", type="string")
+     */
+    protected $description;
+
+    /**
      * @ORM\ManyToOne(targetEntity="AppBundle\Entity\FieldActivity", inversedBy="tasks")
      * @ORM\JoinColumn(name="field_activity_id", referencedColumnName="id")
      */
@@ -43,6 +48,22 @@ class Task extends Base
      * @ORM\Column(name="num_answers", type="integer")
      */
     protected $numberOfAnswers;
+
+    /**
+     * @return mixed
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param mixed $description
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+    }
 
     /**
      * @return mixed
@@ -126,5 +147,10 @@ class Task extends Base
     public function setFieldActivity($fieldActivity)
     {
         $this->fieldActivity = $fieldActivity;
+    }
+
+    public function __toString()
+    {
+        return (string) $this->getTaskName();
     }
 }

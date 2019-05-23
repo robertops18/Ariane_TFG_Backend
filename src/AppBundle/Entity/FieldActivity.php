@@ -70,6 +70,11 @@ class FieldActivity extends Base
         $this->tasks = new \Doctrine\Common\Collections\ArrayCollection();
     }
 
+    public function __toString()
+    {
+        return (string) $this->getFieldTitle();
+    }
+
     /**
      * @return mixed
      */
