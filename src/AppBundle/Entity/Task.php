@@ -45,9 +45,14 @@ class Task extends Base
     protected $fieldActivity;
 
     /**
-     * @ORM\Column(name="num_answers", type="integer", nullable="true")
+     * @ORM\Column(name="num_answers", type="integer")
      */
     protected $numberOfAnswers;
+
+    public function __construct()
+    {
+        $this->numberOfAnswers = 0;
+    }
 
     /**
      * @return mixed
