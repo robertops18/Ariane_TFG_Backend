@@ -45,7 +45,7 @@ class Task extends Base
     protected $fieldActivity;
 
     /**
-     * @ORM\Column(name="num_answers", type="integer")
+     * @ORM\Column(name="num_answers", type="integer", nullable="true")
      */
     protected $numberOfAnswers;
 
