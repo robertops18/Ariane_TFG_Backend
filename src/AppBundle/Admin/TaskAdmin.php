@@ -17,6 +17,7 @@ use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Form\FormMapper;
 use Sonata\AdminBundle\Show\ShowMapper;
 use Sonata\AdminBundle\Route\RouteCollection;
+use Symfony\Component\Form\Extension\Core\Type\HiddenType;
 
 class TaskAdmin extends AbstractAdmin
 {
@@ -69,6 +70,14 @@ class TaskAdmin extends AbstractAdmin
             ->add('description')
             ->add('question', null, array('label' => 'Question (URL if video)'))
             ->add('fieldActivity')
+            ->add('latlng', GoogleMapType::class,
+                array(
+                    'label' => 'Position in map',
+                    'type' => 'text',
+                    'addr_type' => HiddenType::class,
+                    'search_enabled' => false,
+                    'addr_options' => array('required' => false)
+                ))
         ;
     }
 

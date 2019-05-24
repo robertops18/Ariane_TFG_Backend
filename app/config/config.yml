@@ -32,6 +32,10 @@ framework:
     php_errors:
         log: true
 
+
+assetic:
+    bundles: [ 'OhGoogleMapFormTypeBundle' ]
+
 oh_google_map_form_type:
     api_key: "AIzaSyAvAte5AxaesDDFEULrtH4vfn4QGyGd60Y"
 
@@ -49,6 +53,9 @@ twig:
     form_themes:
             - 'SonataCoreBundle:Form:datepicker.html.twig'
 #            - 'ApplicationSonataMediaBundle:Form:media_widgets.html.twig'
+            - 'OhGoogleMapFormTypeBundle:Form:fields.html.twig'
+
+
 
 # Doctrine Configuration
 doctrine:

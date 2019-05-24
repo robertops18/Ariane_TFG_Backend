@@ -50,32 +50,13 @@ class Task extends Base
      */
     protected $numberOfAnswers;
 
-    /**
-     * @ORM\Column(name="lat", type="string")
-     */
-    protected $lat;
-
-    /**
-     * @ORM\Column(name="lng", type="string")
-     */
-    protected $lng;
+    use LocationTrait;
 
     public function __construct()
     {
         $this->numberOfAnswers = 0;
     }
 
-    public function setLatLng($latlng)
-    {
-        $this->setLat($latlng['lat']);
-        $this->setLng($latlng['lng']);
-        return $this;
-    }
-
-    public function getLatLng()
-    {
-        return array('lat'=>$this->getLat(),'lng'=>$this->getLng());
-    }
     /**
      * @return mixed
      */
