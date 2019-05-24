@@ -74,7 +74,7 @@ class FieldAdmin extends AbstractAdmin
             ->add('fieldTitle')
             ->add('initDate')
             ->add('finishDate')
-            ->add('area')
+            ->add('area', null, array('label' => 'Area (City, Country)'))
             ->add('school')
             ->add('students')
             ->add('teacher')

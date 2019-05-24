@@ -10,6 +10,7 @@ namespace AppBundle\Admin;
 
 
 use AppBundle\Entity\Enum\TaskTypeEnum;
+use Oh\GoogleMapFormTypeBundle\Form\Type\GoogleMapType;
 use Sonata\AdminBundle\Admin\AbstractAdmin;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Datagrid\ListMapper;
@@ -61,11 +62,12 @@ class TaskAdmin extends AbstractAdmin
     }
 
     protected function configureFormFields(FormMapper $formMapper) {
+        //$googlemap = new GoogleMapType("AIzaSyAvAte5AxaesDDFEULrtH4vfn4QGyGd60Y");
         $formMapper
             ->add('taskName')
             ->add('type', 'choice', array('label' => 'Type', 'choices' => TaskTypeEnum::getEnumArray()))
             ->add('description')
-            ->add('question')
+            ->add('question', null, array('label' => 'Question (URL if video)'))
             ->add('fieldActivity')
         ;
     }

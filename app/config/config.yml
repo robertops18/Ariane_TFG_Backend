@@ -32,6 +32,9 @@ framework:
     php_errors:
         log: true
 
+oh_google_map_form_type:
+    api_key: "AIzaSyAvAte5AxaesDDFEULrtH4vfn4QGyGd60Y"
+
 # Twig Configuration
 twig:
     debug: '%kernel.debug%'
