@@ -52,6 +52,8 @@ class TaskAdmin extends AbstractAdmin
             ->add('description')
             ->add('fieldActivity')
             ->add('numberOfAnswers')
+            ->add('latitude')
+            ->add('longitude')
             ->add('_action', null, [
                 'actions' => [
                     'show' => [],
@@ -90,6 +92,8 @@ class TaskAdmin extends AbstractAdmin
             ->add('description')
             ->add('fieldActivity')
             ->add('numberOfAnswers')
+            ->add('latitude')
+            ->add('longitude')
         ;
     }
 }
