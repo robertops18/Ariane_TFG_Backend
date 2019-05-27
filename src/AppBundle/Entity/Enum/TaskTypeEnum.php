@@ -16,6 +16,7 @@ class TaskTypeEnum extends BaseEnum
     public static $blanks = 'FILL BLANKS';
     public static $ar = 'AR';
     public static $valoracion = 'VALORACIÓN';
+    public static $opinion = 'OPINIÓN';
     /**
      * @return array
      */
@@ -27,6 +28,7 @@ class TaskTypeEnum extends BaseEnum
             self::$blanks => 'FILL BLANKS',
             self::$ar => 'AR',
             self::$valoracion => 'VALORACIÓN',
+            self::$valoracion => 'OPINIÓN',
         );
     }
 }
