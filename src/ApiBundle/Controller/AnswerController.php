@@ -60,6 +60,7 @@ class AnswerController extends FOSRestController
         $answer->setAnswer($answer_body);
         $answer->setStudent($user);
         $answer->setTask($task);
+        $answer->setFieldActivity($task->getFieldActivity());
 
         $task->incrementAnswers();
 

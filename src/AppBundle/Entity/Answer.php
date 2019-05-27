@@ -31,9 +31,31 @@ class Answer extends Base
     protected $task;
 
     /**
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\FieldActivity")
+     * @ORM\JoinColumn(name="field_activity_id", referencedColumnName="id")
+     */
+    protected $fieldActivity;
+
+    /**
      * @ORM\Column(name="answer", type="string")
      */
     protected $answer;
+
+    /**
+     * @return mixed
+     */
+    public function getFieldActivity()
+    {
+        return $this->fieldActivity;
+    }
+
+    /**
+     * @param mixed $fieldActivity
+     */
+    public function setFieldActivity($fieldActivity)
+    {
+        $this->fieldActivity = $fieldActivity;
+    }
 
     /**
      * @return mixed
