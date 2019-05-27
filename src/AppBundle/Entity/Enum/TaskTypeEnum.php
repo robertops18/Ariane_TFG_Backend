@@ -28,7 +28,7 @@ class TaskTypeEnum extends BaseEnum
             self::$blanks => 'FILL BLANKS',
             self::$ar => 'AR',
             self::$valoracion => 'VALORACIÓN',
-            self::$valoracion => 'OPINIÓN',
+            self::$opinion => 'OPINIÓN',
         );
     }
 }
