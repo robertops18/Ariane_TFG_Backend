@@ -120,6 +120,7 @@ class FieldActivity extends Base
      */
     public function setInitDate($initDate)
     {
+        $initDate->setTimeZone(new \DateTimeZone('Europe/Madrid'));
         $this->initDate = $initDate;
     }
 
@@ -136,6 +137,7 @@ class FieldActivity extends Base
      */
     public function setFinishDate($finishDate)
     {
+        $finishDate->setTimeZone(new \DateTimeZone('Europe/Madrid'));
         $this->finishDate = $finishDate;
     }
 
