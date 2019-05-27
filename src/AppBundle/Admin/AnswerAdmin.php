@@ -43,6 +43,7 @@ class AnswerAdmin extends AbstractAdmin
             ->add('student')
             ->add('task')
             ->add('answer')
+            ->add('fieldActivity')
             ->add('_action', null, [
                 'actions' => [
                     'show' => [],
@@ -67,6 +68,7 @@ class AnswerAdmin extends AbstractAdmin
             ->add('student')
             ->add('task')
             ->add('answer')
+            ->add('fieldActivity')
         ;
     }
 }

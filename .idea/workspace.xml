@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ea2e220b-36f9-49d2-ac6d-6314191ce6a1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Enum/TaskTypeEnum.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Enum/TaskTypeEnum.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Admin/AnswerAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Admin/AnswerAdmin.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +19,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Task.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
+            <state relative-caret-position="-1050">
               <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
               <folding>
                 <element signature="e#125#157#0#PHP" expanded="true" />
@@ -40,11 +40,44 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Enum/TaskTypeEnum.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="28" column="30" lean-forward="true" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+            <state relative-caret-position="375">
+              <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ApiBundle/Controller/AnswerController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="415">
+              <caret line="62" column="61" lean-forward="true" selection-start-line="62" selection-start-column="61" selection-end-line="62" selection-end-column="61" />
+              <folding>
+                <element signature="e#130#158#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/AnswerAdmin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="563">
+              <caret line="70" column="34" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
+              <folding>
+                <element signature="e#125#168#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Answer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="693">
+              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
             </state>
           </provider>
         </entry>
@@ -109,12 +142,9 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Field.php" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/config/services.yml" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Admin/AnswerAdmin.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Answer.php" />
         <option value="$PROJECT_DIR$/src/ApiBundle/Controller/UserController.php" />
         <option value="$PROJECT_DIR$/src/ApiBundle/Controller/StudentsController.php" />
         <option value="$PROJECT_DIR$/src/ApiBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/ApiBundle/Controller/AnswerController.php" />
         <option value="$PROJECT_DIR$/src/ApiBundle/Controller/FieldActivityController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Enum/BaseEnum.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/FieldActivity.php" />
@@ -131,6 +161,9 @@
         <option value="$PROJECT_DIR$/vendor/krixer/google-map-form-type-bundle/Resources/views/Form/google_maps.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Admin/TaskAdmin.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Enum/TaskTypeEnum.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Answer.php" />
+        <option value="$PROJECT_DIR$/src/ApiBundle/Controller/AnswerController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Admin/AnswerAdmin.php" />
       </list>
     </option>
   </component>
@@ -299,6 +332,19 @@
               <item name="Ariane_TFG_Backend" type="b2602c69:ProjectViewProjectNode" />
               <item name="Ariane_TFG_Backend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ariane_TFG_Backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ariane_TFG_Backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ApiBundle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ariane_TFG_Backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ariane_TFG_Backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ApiBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Ariane_TFG_Backend" type="b2602c69:ProjectViewProjectNode" />
@@ -484,7 +530,7 @@
       <workItem from="1556467976172" duration="315000" />
       <workItem from="1557071417643" duration="1556000" />
       <workItem from="1558616680596" duration="12261000" />
-      <workItem from="1558967349731" duration="686000" />
+      <workItem from="1558967349731" duration="1567000" />
     </task>
     <task id="LOCAL-00001" summary="Entity School">
       <created>1553010805600</created>
@@ -626,11 +672,32 @@
       <option name="project" value="LOCAL" />
       <updated>1558722962808</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Type Opinion">
+      <created>1558988033706</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1558988033706</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Type Opinion">
+      <created>1558988141425</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1558988141425</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Assign field activity to answer">
+      <created>1558993248299</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1558993248299</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40806000" />
+    <option name="totallyTimeSpent" value="41687000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -683,7 +750,9 @@
     <MESSAGE value="Componente de Mapa en el cuestionario de creación de Tasks" />
     <MESSAGE value="use statement" />
     <MESSAGE value="LatLng en listado" />
-    <option name="LAST_COMMIT_MESSAGE" value="LatLng en listado" />
+    <MESSAGE value="Type Opinion" />
+    <MESSAGE value="Assign field activity to answer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Assign field activity to answer" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
@@ -789,13 +858,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Answer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Enum/BaseEnum.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -838,26 +900,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ApiBundle/Controller/AnswerController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="60" column="35" lean-forward="true" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
-          <folding>
-            <element signature="e#130#158#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/AnswerAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
-          <folding>
-            <element signature="e#125#168#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -917,16 +959,6 @@
     <entry file="file://$PROJECT_DIR$/web/favicon.ico">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Task.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
-          <folding>
-            <element signature="e#125#157#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/bundles.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -984,8 +1016,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Enum/TaskTypeEnum.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="28" column="30" lean-forward="true" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+        <state relative-caret-position="375">
+          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Task.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1050">
+          <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
+          <folding>
+            <element signature="e#125#157#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ApiBundle/Controller/AnswerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="62" column="61" lean-forward="true" selection-start-line="62" selection-start-column="61" selection-end-line="62" selection-end-column="61" />
+          <folding>
+            <element signature="e#130#158#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Answer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/AnswerAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="70" column="34" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
+          <folding>
+            <element signature="e#125#168#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
