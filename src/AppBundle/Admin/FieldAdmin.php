@@ -14,6 +14,7 @@ use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Form\FormMapper;
 use Sonata\AdminBundle\Show\ShowMapper;
 use Sonata\AdminBundle\Route\RouteCollection;
+use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
 
 class FieldAdmin extends AbstractAdmin
 {
@@ -72,8 +73,8 @@ class FieldAdmin extends AbstractAdmin
     protected function configureFormFields(FormMapper $formMapper) {
         $formMapper
             ->add('fieldTitle')
-            ->add('initDate', null, array('timezone' => 'Europe/Madrid'))
-            ->add('finishDate', null, array('timezone' => 'Europe/Madrid'))
+            ->add('initDate', DateTimeType::class, array('model_timezone' => 'Europe/Madrid'))
+            ->add('finishDate', DateTimeType::class, array('model_timezone' => 'Europe/Madrid'))
             ->add('area', null, array('label' => 'Area (City, Country)'))
             ->add('school')
             ->add('students')
