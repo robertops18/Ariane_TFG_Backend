@@ -24,12 +24,12 @@ class FieldActivity extends Base
     protected $fieldTitle;
 
     /**
-     * @ORM\Column(name="init_date", type="datetime")
+     * @ORM\Column(name="init_date", type="date")
      */
     protected $initDate;
 
     /**
-     * @ORM\Column(name="finish_date", type="datetime")
+     * @ORM\Column(name="finish_date", type="date")
      */
     protected $finishDate;
 

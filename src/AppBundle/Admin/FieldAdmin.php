@@ -73,8 +73,8 @@ class FieldAdmin extends AbstractAdmin
     protected function configureFormFields(FormMapper $formMapper) {
         $formMapper
             ->add('fieldTitle')
-            ->add('initDate', DateTimeType::class, array('format' => 'D M Y'))
-            ->add('finishDate', DateTimeType::class, array('format' => 'D M Y'))
+            ->add('initDate')
+            ->add('finishDate')
             ->add('area', null, array('label' => 'Area (City, Country)'))
             ->add('school')
             ->add('students')
