@@ -52,9 +52,51 @@ class Task extends Base
 
     use LocationTrait;
 
+    /**
+     * @ORM\Column(name="options", type="string", nullable=true)
+     */
+    protected $options;
+
+    /**
+     * @ORM\Column(name="correct_answer", type="string", nullable=true)
+     */
+    protected $correctAnswer;
+
     public function __construct()
     {
         $this->numberOfAnswers = 0;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getOptions()
+    {
+        return $this->options;
+    }
+
+    /**
+     * @param mixed $options
+     */
+    public function setOptions($options)
+    {
+        $this->options = $options;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCorrectAnswer()
+    {
+        return $this->correctAnswer;
+    }
+
+    /**
+     * @param mixed $correctAnswer
+     */
+    public function setCorrectAnswer($correctAnswer)
+    {
+        $this->correctAnswer = $correctAnswer;
     }
 
     /**
