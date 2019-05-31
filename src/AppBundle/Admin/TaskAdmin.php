@@ -76,7 +76,8 @@ class TaskAdmin extends AbstractAdmin
                 array(
                     'label' => 'Position in map',
                     'type' => 'text',
-                    'search_enabled' => true,
+                    'addr_type' => HiddenType::class,
+                    'search_enabled' => false,
                     'addr_options' => array('required' => false)
                 ))
         ;

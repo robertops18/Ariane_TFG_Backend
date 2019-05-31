@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea2e220b-36f9-49d2-ac6d-6314191ce6a1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_3_15_19_1_22_PM_s.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Admin/FieldAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Admin/FieldAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/parameters.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/parameters.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Admin/TaskAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Admin/TaskAdmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Enum/TaskTypeEnum.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Enum/TaskTypeEnum.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,14 +28,41 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/TaskAdmin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="77" column="37" selection-start-line="77" selection-start-column="37" selection-end-line="77" selection-end-column="37" />
+            <state relative-caret-position="334">
+              <caret line="79" column="45" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="45" />
               <folding>
                 <element signature="e#125#164#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="358">
+              <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/packages/oh_google_map_form_type.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="117">
+              <caret line="39" column="53" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -113,7 +137,6 @@
         <option value="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/config/doctrine/User.orm.xml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Field.php" />
-        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/config/services.yml" />
         <option value="$PROJECT_DIR$/src/ApiBundle/Controller/UserController.php" />
         <option value="$PROJECT_DIR$/src/ApiBundle/Controller/StudentsController.php" />
@@ -122,10 +145,8 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Enum/BaseEnum.php" />
         <option value="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Admin/Model/UserAdmin.php" />
         <option value="$PROJECT_DIR$/app/config/bundles.php" />
-        <option value="$PROJECT_DIR$/app/config/packages/oh_google_map_form_type.yaml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Form/GoogleMapType.php" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Task.php" />
         <option value="$PROJECT_DIR$/vendor/krixer/google-map-form-type-bundle/Form/Type/GoogleMapType.php" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
@@ -136,7 +157,10 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/FieldActivity.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Admin/FieldAdmin.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Enum/TaskTypeEnum.php" />
+        <option value="$PROJECT_DIR$/app/config/packages/oh_google_map_form_type.yaml" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Admin/TaskAdmin.php" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
       </list>
     </option>
   </component>
@@ -453,7 +477,7 @@
       <workItem from="1558616680596" duration="12261000" />
       <workItem from="1558967349731" duration="3087000" />
       <workItem from="1559052767560" duration="242000" />
-      <workItem from="1559314901241" duration="933000" />
+      <workItem from="1559314901241" duration="1391000" />
     </task>
     <task id="LOCAL-00001" summary="Entity School">
       <created>1553010805600</created>
@@ -672,11 +696,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558996072964</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="*tasks en el show de activities&#10;*API key con restricciones">
+      <created>1559316474278</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1559316474278</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44382000" />
+    <option name="totallyTimeSpent" value="44840000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -733,7 +764,8 @@
     <MESSAGE value="Assign field activity to answer" />
     <MESSAGE value="TimeZones" />
     <MESSAGE value="date" />
-    <option name="LAST_COMMIT_MESSAGE" value="date" />
+    <MESSAGE value="*tasks en el show de activities&#10;*API key con restricciones" />
+    <option name="LAST_COMMIT_MESSAGE" value="*tasks en el show de activities&#10;*API key con restricciones" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
@@ -802,13 +834,6 @@
           <folding>
             <element signature="e#124#167#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -885,13 +910,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/packages/oh_google_map_form_type.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/krixer/google-map-form-type-bundle/OhGoogleMapFormTypeBundle.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -961,13 +979,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Task.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
@@ -1032,13 +1043,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/packages/oh_google_map_form_type.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="39" column="53" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/TaskAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="77" column="37" selection-start-line="77" selection-start-column="37" selection-end-line="77" selection-end-column="37" />
+        <state relative-caret-position="334">
+          <caret line="79" column="45" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="45" />
           <folding>
             <element signature="e#125#164#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
         </state>
       </provider>
     </entry>
