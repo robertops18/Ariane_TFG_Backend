@@ -17,6 +17,8 @@ class TaskTypeEnum extends BaseEnum
     public static $ar = 'AR';
     public static $valoracion = 'VALORACIÓN';
     public static $opinion = 'OPINIÓN';
+    public static $audio = 'AUDIO';
+
     /**
      * @return array
      */
@@ -29,6 +31,7 @@ class TaskTypeEnum extends BaseEnum
             self::$ar => 'AR',
             self::$valoracion => 'VALORACIÓN',
             self::$opinion => 'OPINIÓN',
+            self::$audio => 'AUDIO',
         );
     }
 }

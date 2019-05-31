@@ -70,7 +70,7 @@ class TaskAdmin extends AbstractAdmin
             ->add('taskName')
             ->add('type', 'choice', array('label' => 'Type', 'choices' => TaskTypeEnum::getEnumArray()))
             ->add('description')
-            ->add('question', null, array('label' => 'Question (URL if video)'))
+            ->add('question', null, array('label' => 'Question (URL if video or audio)'))
             ->add('fieldActivity')
             ->add('latlng', GoogleMapType::class,
                 array(
