@@ -13,7 +13,7 @@ class TaskTypeEnum extends BaseEnum
 {
     public static $video = 'VIDEO';
     public static $test = 'TEST';
-    public static $blanks = 'FILL BLANKS';
+    public static $description = 'DESCRIPCIÓN';
     public static $ar = 'AR';
     public static $valoracion = 'VALORACIÓN';
     public static $opinion = 'OPINIÓN';
@@ -25,7 +25,7 @@ class TaskTypeEnum extends BaseEnum
         return array(
             self::$video => 'VIDEO',
             self::$test => 'TEST',
-            self::$blanks => 'FILL BLANKS',
+            self::$description => 'DESCRIPCIÓN',
             self::$ar => 'AR',
             self::$valoracion => 'VALORACIÓN',
             self::$opinion => 'OPINIÓN',

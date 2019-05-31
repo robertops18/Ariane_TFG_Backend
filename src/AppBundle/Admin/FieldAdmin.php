@@ -92,6 +92,7 @@ class FieldAdmin extends AbstractAdmin
             ->add('school')
             ->add('students')
             ->add('teacher')
+            ->add('tasks')
         ;
     }
 }
