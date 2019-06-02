@@ -45,6 +45,8 @@ class LogAdmin extends AbstractAdmin
             ->add('task')
             ->add('action')
             ->add('fieldActivity')
+            ->add('latitude')
+            ->add('longitude')
             ->add('_action', null, [
                 'actions' => [
                     'show' => [],
@@ -70,6 +72,8 @@ class LogAdmin extends AbstractAdmin
             ->add('task')
             ->add('action')
             ->add('fieldActivity')
+            ->add('latitude')
+            ->add('longitude')
         ;
     }
 }

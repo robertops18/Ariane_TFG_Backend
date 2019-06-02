@@ -39,6 +39,8 @@ class LogController extends FOSRestController
      *              @SWG\Schema(
      *              type="object",
      *              @SWG\Property(property="action", type="string")
+     *              @SWG\Property(property="lat", type="float")
+     *              @SWG\Property(property="lng", type="float")
      *          )
      *     )
      * @SWG\Tag(name="Logs")
@@ -56,12 +58,16 @@ class LogController extends FOSRestController
         }
 
         $action = $request->get('action');
+        $lat = $request->get('lat');
+        $lng = $request->get('lng');
 
         $log = new Log();
         $log->setAction($action);
         $log->setStudent($user);
         $log->setTask($task);
         $log->setFieldActivity($task->getFieldActivity());
+        $log->setLatitude($lat);
+        $log->setLongitude($lng);
 
         $em->persist($log);
         $em->flush();

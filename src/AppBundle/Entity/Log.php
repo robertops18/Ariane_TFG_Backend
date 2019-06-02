@@ -9,6 +9,8 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Oh\GoogleMapFormTypeBundle\Traits\LocationTrait;
+
 /**
  * Log
  *
@@ -39,6 +41,8 @@ class Log extends Base
      * @ORM\Column(name="action", type="string")
      */
     protected $action;
+
+    use LocationTrait;
 
     /**
      * @return mixed

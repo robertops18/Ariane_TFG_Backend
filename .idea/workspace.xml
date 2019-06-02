@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea2e220b-36f9-49d2-ac6d-6314191ce6a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Admin/LogAdmin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Log.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Admin/AnswerAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Admin/AnswerAdmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/config/services.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/config/services.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiBundle/Controller/LogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiBundle/Controller/LogController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Log.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Log.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,11 +17,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Answer.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ApiBundle/Controller/LogController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="106" selection-start-line="20" selection-start-column="4" selection-end-line="106" />
+            <state relative-caret-position="-102">
+              <caret line="42" column="63" lean-forward="true" selection-start-line="42" selection-start-column="63" selection-end-line="42" selection-end-column="63" />
+              <folding>
+                <element signature="e#130#158#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -32,50 +32,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Log.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/LogAdmin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="876">
-              <caret line="70" column="25" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
+            <state relative-caret-position="199">
+              <caret line="44" column="18" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
               <folding>
-                <element signature="e#125#168#0#PHP" expanded="true" />
+                <element signature="e#125#157#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/config/services.yml">
+        <entry file="file://$PROJECT_DIR$/src/ApiBundle/Controller/AnswerController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="41" column="74" selection-start-line="41" selection-start-column="74" selection-end-line="41" selection-end-column="74" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/AnswerAdmin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="36" />
+            <state relative-caret-position="-426">
+              <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
               <folding>
-                <element signature="e#125#168#0#PHP" expanded="true" />
+                <element signature="e#130#158#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="322" column="35" selection-start-line="322" selection-start-column="35" selection-end-line="322" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -93,6 +66,7 @@
       <find>latitude</find>
       <find>asset</find>
       <find>nullable</find>
+      <find>api</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -101,8 +75,6 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="php bin/console server:run" />
-      <command text="composer require egeloen/google-map" />
       <command text="composer require oh/google-map-form-type-bundle" />
       <command text="composer install" />
       <command text="composer require krixer/google-map-form-type-bundle" />
@@ -126,6 +98,8 @@
       <command text="php bin/console doctrine:schema:update --force" />
       <command text="php bin/console server:run" />
       <command text="php bin/console doctrine:schema:update --force" />
+      <command text="php bin/console server:run" />
+      <command text="php bin/console doctrine:schema:update --force" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -145,7 +119,6 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Field.php" />
         <option value="$PROJECT_DIR$/src/ApiBundle/Controller/UserController.php" />
         <option value="$PROJECT_DIR$/src/ApiBundle/Controller/StudentsController.php" />
-        <option value="$PROJECT_DIR$/src/ApiBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/ApiBundle/Controller/FieldActivityController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Enum/BaseEnum.php" />
         <option value="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Admin/Model/UserAdmin.php" />
@@ -165,11 +138,13 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Task.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Admin/TaskAdmin.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Enum/TaskTypeEnum.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Log.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Admin/AnswerAdmin.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Admin/LogAdmin.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/config/services.yml" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/src/ApiBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Log.php" />
+        <option value="$PROJECT_DIR$/src/ApiBundle/Controller/LogController.php" />
       </list>
     </option>
   </component>
@@ -355,6 +330,21 @@
               <item name="Ariane_TFG_Backend" type="b2602c69:ProjectViewProjectNode" />
               <item name="Ariane_TFG_Backend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ApiBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ariane_TFG_Backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ariane_TFG_Backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ApiBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ariane_TFG_Backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ariane_TFG_Backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="AppBundle" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -488,7 +478,7 @@
       <workItem from="1559052767560" duration="242000" />
       <workItem from="1559314901241" duration="4429000" />
       <workItem from="1559436946044" duration="956000" />
-      <workItem from="1559501681076" duration="267000" />
+      <workItem from="1559501681076" duration="947000" />
     </task>
     <task id="LOCAL-00001" summary="Entity School">
       <created>1553010805600</created>
@@ -749,14 +739,29 @@
       <option name="project" value="LOCAL" />
       <updated>1559438325189</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Log entity added">
+      <created>1559502082785</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1559502082785</updated>
+    </task>
+    <task id="LOCAL-00039" summary="createLog API method">
+      <created>1559502382683</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1559502382684</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49101000" />
+    <option name="totallyTimeSpent" value="49781000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49795082" visible="true" weight="0.32956383" />
       <window_info id="Structure" order="1" sideWeight="0.5020492" side_tool="true" weight="0.27382874" />
@@ -785,8 +790,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="favicon" />
-    <MESSAGE value="Entities acabadas&#10;- School&#10;- Field&#10;- Task&#10;- Answer&#10;Faltan los tipos de task" />
     <MESSAGE value="Últimos retoques de la API" />
     <MESSAGE value="Array en metodo de la API de los field trips de cada alumno" />
     <MESSAGE value="corchetes" />
@@ -810,10 +813,11 @@
     <MESSAGE value="Preguntas de tipo test: opciones y respuesta correcta añadido al modelo" />
     <MESSAGE value="TIPO YOUTUBE" />
     <MESSAGE value="Video 360" />
-    <option name="LAST_COMMIT_MESSAGE" value="Video 360" />
+    <MESSAGE value="Log entity added" />
+    <MESSAGE value="createLog API method" />
+    <option name="LAST_COMMIT_MESSAGE" value="createLog API method" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Event.php" />
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/EventRepository.php" />
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/email/congratulationsAndSuggestion.email.twig">
       <provider selected="true" editor-type-id="text-editor" />
@@ -844,14 +848,6 @@
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-697" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/SchoolAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -864,16 +860,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Application/Sonata/UserBundle/Document/User.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ApiBundle/Resources/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ApiBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ApiBundle/Controller/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -946,13 +932,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/GoogleMapType.php" />
-    <entry file="file://$PROJECT_DIR$/vendor/krixer/google-map-form-type-bundle/Traits/LocationTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-240">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/logo.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -994,16 +973,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ApiBundle/Controller/AnswerController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="62" column="61" selection-start-line="62" selection-start-column="61" selection-end-line="62" selection-end-column="61" />
-          <folding>
-            <element signature="e#130#158#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1082,17 +1051,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Answer.php">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/LogAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="106" selection-start-line="20" selection-start-column="4" selection-end-line="106" />
+        <state relative-caret-position="876">
+          <caret line="70" column="25" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
+          <folding>
+            <element signature="e#125#168#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Log.php">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Answer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+        <state relative-caret-position="75">
+          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ApiBundle/Resources/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-279" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8">
+          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1100,16 +1094,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="36" />
-          <folding>
-            <element signature="e#125#168#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/LogAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="876">
-          <caret line="70" column="25" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
           <folding>
             <element signature="e#125#168#0#PHP" expanded="true" />
           </folding>
@@ -1126,10 +1110,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+    <entry file="file://$PROJECT_DIR$/src/ApiBundle/Controller/AnswerController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="322" column="35" selection-start-line="322" selection-start-column="35" selection-end-line="322" selection-end-column="35" />
+        <state relative-caret-position="-426">
+          <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+          <folding>
+            <element signature="e#130#158#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ApiBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/krixer/google-map-form-type-bundle/Traits/LocationTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Log.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="44" column="18" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
+          <folding>
+            <element signature="e#125#157#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ApiBundle/Controller/LogController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="42" column="63" lean-forward="true" selection-start-line="42" selection-start-column="63" selection-end-line="42" selection-end-column="63" />
+          <folding>
+            <element signature="e#130#158#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
