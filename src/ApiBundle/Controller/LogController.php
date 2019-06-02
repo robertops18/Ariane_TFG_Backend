@@ -38,8 +38,8 @@ class LogController extends FOSRestController
      *       required=true,
      *              @SWG\Schema(
      *              type="object",
-     *              @SWG\Property(property="action", type="string")
-     *              @SWG\Property(property="lat", type="float")
+     *              @SWG\Property(property="action", type="string"),
+     *              @SWG\Property(property="lat", type="float"),
      *              @SWG\Property(property="lng", type="float")
      *          )
      *     )
