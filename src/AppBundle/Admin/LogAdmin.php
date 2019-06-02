@@ -36,6 +36,11 @@ class LogAdmin extends AbstractAdmin
             ->add('task')
             ->add('action')
             ->add('fieldActivity')
+            ->add('createdAt', 'doctrine_orm_date_range', array(
+                'field_type' => 'sonata_type_date_range_picker',
+                'advanced_filter' => false,
+                'pattern' => 'dd/MM/yyyy HH:mm'
+            ))
         ;
     }
 

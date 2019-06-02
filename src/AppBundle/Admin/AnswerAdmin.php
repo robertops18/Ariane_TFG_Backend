@@ -35,12 +35,18 @@ class AnswerAdmin extends AbstractAdmin
             ->add('student')
             ->add('task')
             ->add('answer')
+            ->add('createdAt', 'doctrine_orm_date_range', array(
+                'field_type' => 'sonata_type_date_range_picker',
+                'advanced_filter' => false,
+                'pattern' => 'dd/MM/yyyy HH:mm'
+            ))
         ;
     }
 
     protected function configureListFields(ListMapper $listMapper) {
         $listMapper
             ->add('id')
+            ->add('createdAt')
             ->add('student')
             ->add('task')
             ->add('answer')
@@ -66,6 +72,7 @@ class AnswerAdmin extends AbstractAdmin
     protected function configureShowFields(ShowMapper $showMapper) {
         $showMapper
             ->add('id')
+            ->add('createdAt')
             ->add('student')
             ->add('task')
             ->add('answer')
