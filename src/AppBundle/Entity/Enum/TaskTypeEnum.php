@@ -12,6 +12,7 @@ namespace AppBundle\Entity\Enum;
 class TaskTypeEnum extends BaseEnum
 {
     public static $video = 'VIDEO';
+    public static $youtube = 'YOUTUBE';
     public static $test = 'TEST';
     public static $description = 'DESCRIPCIÓN';
     public static $ar = 'AR';
@@ -26,6 +27,7 @@ class TaskTypeEnum extends BaseEnum
     {
         return array(
             self::$video => 'VIDEO',
+            self::$youtube => 'YOUTUBE',
             self::$test => 'TEST',
             self::$description => 'DESCRIPCIÓN',
             self::$ar => 'AR',

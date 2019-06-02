@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ea2e220b-36f9-49d2-ac6d-6314191ce6a1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Admin/TaskAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Admin/TaskAdmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Task.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Task.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +39,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/TaskAdmin.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="253">
@@ -89,7 +87,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Enum/TaskTypeEnum.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
@@ -110,9 +108,11 @@
       <find>lat_name</find>
       <find>latitude</find>
       <find>asset</find>
+      <find>nullable</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/src</dir>
     </dirStrings>
   </component>
   <component name="FrameworkCommandLineHistory">
@@ -500,7 +500,7 @@
       <workItem from="1558616680596" duration="12261000" />
       <workItem from="1558967349731" duration="3087000" />
       <workItem from="1559052767560" duration="242000" />
-      <workItem from="1559314901241" duration="3466000" />
+      <workItem from="1559314901241" duration="4429000" />
     </task>
     <task id="LOCAL-00001" summary="Entity School">
       <created>1553010805600</created>
@@ -740,17 +740,23 @@
       <option name="project" value="LOCAL" />
       <updated>1559319134904</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Preguntas de tipo test: opciones y respuesta correcta añadido al modelo">
+      <created>1559332022323</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1559332022323</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46915000" />
+    <option name="totallyTimeSpent" value="47878000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49795082" visible="true" weight="0.31987077" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49795082" visible="true" weight="0.31987077" />
       <window_info id="Structure" order="1" sideWeight="0.5020492" side_tool="true" weight="0.27382874" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -763,7 +769,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49919224" weight="0.2479452" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Command Line Tools Console" order="10" sideWeight="0.49919224" visible="true" weight="0.30821916" />
+      <window_info anchor="bottom" id="Command Line Tools Console" order="10" sideWeight="0.49919224" visible="true" weight="0.30821916" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32876712" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50080776" side_tool="true" weight="0.31917807" />
       <window_info anchor="bottom" id="Messages" order="13" />
@@ -777,7 +783,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="puto tostring" />
     <MESSAGE value="Field Activities entity, admin and service" />
     <MESSAGE value="* Logo&#10;* Alumnos profesor e instituto asociados a la salida de campo" />
     <MESSAGE value="favicon" />
@@ -802,7 +807,8 @@
     <MESSAGE value="*tasks en el show de activities&#10;*API key con restricciones" />
     <MESSAGE value="s3 configuration" />
     <MESSAGE value="Tipo audio" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tipo audio" />
+    <MESSAGE value="Preguntas de tipo test: opciones y respuesta correcta añadido al modelo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Preguntas de tipo test: opciones y respuesta correcta añadido al modelo" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Services/FirebaseService.php">
@@ -1046,13 +1052,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Enum/TaskTypeEnum.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/FieldAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="593">
@@ -1108,6 +1107,13 @@
           <folding>
             <element signature="e#125#164#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Enum/TaskTypeEnum.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
         </state>
       </provider>
     </entry>
