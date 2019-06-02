@@ -13,6 +13,11 @@ answers_api:
     resource: "@ApiBundle/Controller/AnswerController.php"
     prefix: /answer
 
+logs_api:
+    type: annotation
+    resource: "@ApiBundle/Controller/LogController.php"
+    prefix: /log
+
 util_api:
     type: annotation
     resource: "@ApiBundle/Controller/UtilsController.php"
