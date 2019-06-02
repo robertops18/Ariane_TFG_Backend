@@ -35,6 +35,7 @@ class LogAdmin extends AbstractAdmin
             ->add('student')
             ->add('task')
             ->add('action')
+            ->add('fieldActivity')
         ;
     }
 
