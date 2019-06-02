@@ -41,6 +41,7 @@ class LogAdmin extends AbstractAdmin
     protected function configureListFields(ListMapper $listMapper) {
         $listMapper
             ->add('id')
+            ->add('createdAt')
             ->add('student')
             ->add('task')
             ->add('action')
@@ -68,6 +69,7 @@ class LogAdmin extends AbstractAdmin
     protected function configureShowFields(ShowMapper $showMapper) {
         $showMapper
             ->add('id')
+            ->add('createdAt')
             ->add('student')
             ->add('task')
             ->add('action')
