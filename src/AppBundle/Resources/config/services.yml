@@ -34,3 +34,10 @@ services:
     tags:
       - { name: sonata.admin, manager_type: orm, group: admin, label: Answers }
     public: true
+
+  app.admin.log:
+    class: AppBundle\Admin\LogAdmin
+    arguments: [~, AppBundle\Entity\Log, Sonata\AdminBundle\Controller\CRUDController]
+    tags:
+      - { name: sonata.admin, manager_type: orm, group: admin, label: Logs }
+    public: true

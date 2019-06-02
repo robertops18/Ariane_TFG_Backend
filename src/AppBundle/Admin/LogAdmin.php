@@ -16,7 +16,7 @@ use Sonata\AdminBundle\Form\FormMapper;
 use Sonata\AdminBundle\Show\ShowMapper;
 use Sonata\AdminBundle\Route\RouteCollection;
 
-class AnswerAdmin extends AbstractAdmin
+class LogAdmin extends AbstractAdmin
 {
     protected function configureRoutes(RouteCollection $collection) {
         //$collection->remove('show');
@@ -34,7 +34,7 @@ class AnswerAdmin extends AbstractAdmin
             ->add('id')
             ->add('student')
             ->add('task')
-            ->add('answer')
+            ->add('action')
         ;
     }
 
@@ -43,7 +43,7 @@ class AnswerAdmin extends AbstractAdmin
             ->add('id')
             ->add('student')
             ->add('task')
-            ->add('answer')
+            ->add('action')
             ->add('fieldActivity')
             ->add('_action', null, [
                 'actions' => [
@@ -59,7 +59,7 @@ class AnswerAdmin extends AbstractAdmin
         $formMapper
             ->add('student')
             ->add('task')
-            ->add('answer')
+            ->add('action')
         ;
     }
 
@@ -68,7 +68,7 @@ class AnswerAdmin extends AbstractAdmin
             ->add('id')
             ->add('student')
             ->add('task')
-            ->add('answer')
+            ->add('action')
             ->add('fieldActivity')
         ;
     }

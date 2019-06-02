@@ -320,6 +320,7 @@ sonata_admin:
                     - app.admin.fieldactivities
                     - app.admin.task
                     - app.admin.answer
+                    - app.admin.log
 
 #            sonata.admin.group.media:
 #                roles:                 [ROLE_SUPER_ADMIN]
