@@ -43,7 +43,7 @@ parameters:
     jwt_token_ttl: 14400
 
     files_temp_dir: '%kernel.project_dir%/web/uploads/media/temp/'
-    amazon_s3_key: AKIAVDZ5AGSKFWMHSMXD
-    amazon_s3_secret: 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
-    amazon_s3_region: s3-eu-west-2.amazonaws.com
-    amazon_s3_bucket: ariane-uniovi
+    amazon_s3_key: AKIAVDZ5AGSKKVR6UDNP
+    amazon_s3_secret: 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
+    amazon_s3_region: s3-us-east-2.amazonaws.com
+    amazon_s3_bucket: ariane-s3
