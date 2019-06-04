@@ -38,8 +38,7 @@ class UserController extends FOSRestController
             'username' => $user->getUsername(),
             'email' => $user->getEmail(),
             'name' => $user->getFirstname(),
-            'surname' => $user->getLastname(),
-            'avatar' => $user->getAvatar()
+            'surname' => $user->getLastname()
         ];
 
         $view = $this->view(['profile' => $data], Response::HTTP_OK);
