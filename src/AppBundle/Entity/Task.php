@@ -65,7 +65,7 @@ class Task extends Base
     /**
      * @ORM\Column(name="image_url", type="string", nullable=true)
      */
-    protected $imageURL;
+    protected $imageUrl;
 
     public function __construct()
     {
@@ -75,17 +75,17 @@ class Task extends Base
     /**
      * @return mixed
      */
-    public function getImageURL()
+    public function getImageUrl()
     {
-        return $this->imageURL;
+        return $this->imageUrl;
     }
 
     /**
-     * @param mixed $imageURL
+     * @param mixed $imageUrl
      */
-    public function setImageURL($imageURL)
+    public function setImageUrl($imageUrl)
     {
-        $this->imageURL = $imageURL;
+        $this->imageUrl = $imageUrl;
     }
 
     /**

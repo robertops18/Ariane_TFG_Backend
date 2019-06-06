@@ -49,7 +49,7 @@ class TaskAdmin extends AbstractAdmin
             ->add('description')
             ->add('fieldActivity')
             ->add('numberOfAnswers')
-            ->add('imageURL', null, array('label' => 'Image URL'))
+            ->add('imageUrl', null, array('label' => 'Image URL'))
             ->add('latitude')
             ->add('longitude')
             ->add('_action', null, [
@@ -69,7 +69,7 @@ class TaskAdmin extends AbstractAdmin
             ->add('type', 'choice', array('label' => 'Type', 'choices' => TaskTypeEnum::getEnumArray()))
             ->add('description')
             ->add('question', null, array('label' => 'Question (URL if video or audio)'))
-            ->add('imageURL', null, array('label' => 'Image URL'))
+            ->add('imageUrl', null, array('label' => 'Image URL'))
             ->add('options', null, array('label' => 'Options of the question (separated by semi-column (;))'))
             ->add('correctAnswer', null, array('label' => 'Correct option of the previous ones'))
             ->add('fieldActivity')
