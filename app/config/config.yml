@@ -308,10 +308,10 @@ sonata_admin:
                     - sonata.user.admin.group
 
             school:
-                label:                  Schools
+                label:                  Groups
                 icon:                   '<i class="fa fa-briefcase"></i>'
                 items:
-                    - app.admin.school
+                    - app.admin.studentsgroup
 
             field:
                 label:                  Activities

@@ -39,10 +39,10 @@ class FieldActivity extends Base
     protected $area;
 
     /**
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\School")
-     * @ORM\JoinColumn(name="school_id", referencedColumnName="id")
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\StudentsGroup")
+     * @ORM\JoinColumn(name="students_group_id", referencedColumnName="id")
      */
-    protected $school;
+    protected $studentsGroup;
 
     /**
      * @ORM\ManyToOne(targetEntity="Application\Sonata\UserBundle\Entity\User")
@@ -51,22 +51,11 @@ class FieldActivity extends Base
     protected $teacher;
 
     /**
-     * Many Fields activties have Many Students.
-     * @ORM\ManyToMany(targetEntity="Application\Sonata\UserBundle\Entity\User")
-     * @ORM\JoinTable(name="fields_students",
-     *      joinColumns={@ORM\JoinColumn(name="field_activity_id", referencedColumnName="id")},
-     *      inverseJoinColumns={@ORM\JoinColumn(name="student_id", referencedColumnName="id")}
-     *      )
-     */
-    private $students;
-
-    /**
      * @ORM\OneToMany(targetEntity="AppBundle\Entity\Task", mappedBy="fieldActivity")
      */
     protected $tasks;
 
     public function __construct() {
-        $this->students = new \Doctrine\Common\Collections\ArrayCollection();
         $this->tasks = new \Doctrine\Common\Collections\ArrayCollection();
     }
 
@@ -158,22 +147,6 @@ class FieldActivity extends Base
     /**
      * @return mixed
      */
-    public function getStudents()
-    {
-        return $this->students;
-    }
-
-    /**
-     * @param mixed $students
-     */
-    public function setStudents($students)
-    {
-        $this->students = $students;
-    }
-
-    /**
-     * @return mixed
-     */
     public function getFieldTitle()
     {
         return $this->fieldTitle;
@@ -190,17 +163,17 @@ class FieldActivity extends Base
     /**
      * @return mixed
      */
-    public function getSchool()
+    public function getStudentsGroup()
     {
-        return $this->school;
+        return $this->studentsGroup;
     }
 
     /**
-     * @param mixed $school
+     * @param mixed $studentsGroup
      */
-    public function setSchool($school)
+    public function setStudentsGroup($studentsGroup)
     {
-        $this->school = $school;
+        $this->studentsGroup = $studentsGroup;
     }
 
 

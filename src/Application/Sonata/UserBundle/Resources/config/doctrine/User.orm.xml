@@ -16,6 +16,8 @@
             </cascade>
         </many-to-one>
 
+        <many-to-one field="studentsGroup" target-entity="AppBundle\Entity\StudentsGroup" inversed-by="students" />
+
     </entity>
 
 </doctrine-mapping>

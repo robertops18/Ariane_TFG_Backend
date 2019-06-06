@@ -43,8 +43,7 @@ class FieldAdmin extends AbstractAdmin
                     'advanced_filter' => false), 'sonata_type_date_range_picker',
                 array('field_options_start' => array('format' => 'dd/MM/yyyy'), 'field_options_end' => array('format' => 'dd/MM/yyyy')))
             ->add('area')
-            ->add('school')
-            ->add('students')
+            ->add('studentsGroup')
             ->add('teacher')
         ;
     }
@@ -56,8 +55,7 @@ class FieldAdmin extends AbstractAdmin
             ->add('initDate')
             ->add('finishDate')
             ->add('area')
-            ->add('school')
-            ->add('students')
+            ->add('studentsGroup')
             ->add('teacher')
             ->add('tasks')
             ->add('_action', null, [
@@ -76,8 +74,7 @@ class FieldAdmin extends AbstractAdmin
             ->add('initDate')
             ->add('finishDate')
             ->add('area', null, array('label' => 'Area (City, Country)'))
-            ->add('school')
-            ->add('students')
+            ->add('studentsGroup')
             ->add('teacher')
         ;
     }
@@ -89,8 +86,7 @@ class FieldAdmin extends AbstractAdmin
             ->add('initDate')
             ->add('finishDate')
             ->add('area')
-            ->add('school')
-            ->add('students')
+            ->add('studentsGroup')
             ->add('teacher')
             ->add('tasks')
         ;

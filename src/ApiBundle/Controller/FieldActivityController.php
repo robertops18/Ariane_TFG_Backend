@@ -90,7 +90,7 @@ class FieldActivityController extends FOSRestController
         $filtered_activities = [];
 
         foreach ($field_activities as $field) {
-            foreach ($field->getStudents() as $student) {
+            foreach ($field->getStudentsGroup()->getStudents() as $student) {
                 if ($student->getId() === $studentId) {
                     array_push($filtered_activities, $field);
                 }

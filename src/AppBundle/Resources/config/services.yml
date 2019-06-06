@@ -14,6 +14,13 @@ services:
       - { name: sonata.admin, manager_type: orm, group: admin, label: School }
     public: true
 
+  app.admin.studentsgroup:
+    class: AppBundle\Admin\StudentsGroupAdmin
+    arguments: [~, AppBundle\Entity\StudentsGroup, Sonata\AdminBundle\Controller\CRUDController]
+    tags:
+      - { name: sonata.admin, manager_type: orm, group: admin, label: Student's groups }
+    public: true
+
   app.admin.fieldactivities:
     class: AppBundle\Admin\FieldAdmin
     arguments: [~, AppBundle\Entity\FieldActivity, Sonata\AdminBundle\Controller\CRUDController]
