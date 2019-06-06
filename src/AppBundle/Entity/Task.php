@@ -62,9 +62,30 @@ class Task extends Base
      */
     protected $correctAnswer;
 
+    /**
+     * @ORM\Column(name="image_url", type="string", nullable=true)
+     */
+    protected $imageURL;
+
     public function __construct()
     {
         $this->numberOfAnswers = 0;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getImageURL()
+    {
+        return $this->imageURL;
+    }
+
+    /**
+     * @param mixed $imageURL
+     */
+    public function setImageURL($imageURL)
+    {
+        $this->imageURL = $imageURL;
     }
 
     /**
