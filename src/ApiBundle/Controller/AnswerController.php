@@ -62,8 +62,6 @@ class AnswerController extends FOSRestController
         $answer->setTask($task);
         $answer->setFieldActivity($task->getFieldActivity());
 
-        $task->incrementAnswers();
-
         $em->persist($answer);
         $em->flush();
 

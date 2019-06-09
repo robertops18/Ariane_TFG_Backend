@@ -54,6 +54,8 @@ class EntityControllerTest extends WebTestCase
         $task = new Task();
         $task->setTaskName('Test task');
         $task->setType(TaskTypeEnum::$valoracion);
+        $answer = new Answer();
+        $answer->setTask($task);
 
         //Getters and setters
         $this->assertNotNull($task);
@@ -61,7 +63,7 @@ class EntityControllerTest extends WebTestCase
         $this->assertEquals($task->getTaskName(), 'Test task');
         $this->assertEquals($task->getType(), 'VALORACIÓN');
 
-        $task->incrementAnswers();
+        $task->setAnswers([$answer]);
         $this->assertEquals($task->getNumberOfAnswers(), 1);
     }
 

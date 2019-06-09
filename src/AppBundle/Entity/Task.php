@@ -67,9 +67,31 @@ class Task extends Base
      */
     protected $imageUrl;
 
+    /**
+     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Answer", mappedBy="task")
+     */
+    protected $answers;
+
     public function __construct()
     {
-        $this->numberOfAnswers = 0;
+        $this->answers = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->numberOfAnswers = sizeof($this->answers);
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getAnswers()
+    {
+        return $this->answers;
+    }
+
+    /**
+     * @param mixed $answers
+     */
+    public function setAnswers($answers)
+    {
+        $this->answers = $answers;
     }
 
     /**
@@ -141,7 +163,7 @@ class Task extends Base
      */
     public function getNumberOfAnswers()
     {
-        return $this->numberOfAnswers;
+        return sizeof($this->answers);
     }
 
     /**
@@ -149,11 +171,7 @@ class Task extends Base
      */
     public function setNumberOfAnswers($numberOfAnswers)
     {
-        $this->numberOfAnswers = $numberOfAnswers;
-    }
-
-    public function incrementAnswers() {
-        $this->numberOfAnswers += 1;
+        $this->numberOfAnswers = sizeof($this->answers);
     }
 
     /**

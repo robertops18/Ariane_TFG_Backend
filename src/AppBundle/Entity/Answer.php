@@ -31,7 +31,7 @@ class Answer extends Base
     protected $task;
 
     /**
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\FieldActivity")
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\FieldActivity", inversedBy="answers")
      * @ORM\JoinColumn(name="field_activity_id", referencedColumnName="id")
      */
     protected $fieldActivity;
