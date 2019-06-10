@@ -9,6 +9,8 @@
 namespace ApiBundle\Controller;
 
 
+use ApiBundle\Controller\aux\LatLng;
+use ApiBundle\Controller\aux\Marker;
 use Nelmio\ApiDocBundle\Annotation\Security;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -98,6 +100,52 @@ class FieldActivityController extends FOSRestController
         }
 
         $view = $this->view(['result' => $filtered_activities], Response::HTTP_OK);
+        return $this->handleView($view);
+    }
+
+    /** Get markers for map.
+     *
+     * @Route("/student/activities/markers",methods={"GET"})
+     * @SWG\Response(
+     *     response=200,
+     *     description="Get markers"
+     * )
+     * @SWG\Response(
+     *     response=404,
+     *     description="Not Found"
+     * )
+     * @SWG\Tag(name="Field Activities")
+     * @Security(name="Bearer")
+     */
+    public function getFieldActivitiyMarkersByStudent()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $user = $this->getUser();
+        $studentId = $user->getId();
+
+        $field_activities = $em->getRepository('AppBundle:FieldActivity')->findAll();
+        $filtered_activities = [];
+
+        foreach ($field_activities as $field) {
+            foreach ($field->getStudentsGroup()->getStudents() as $student) {
+                if ($student->getId() === $studentId) {
+                    array_push($filtered_activities, $field);
+                }
+            }
+        }
+
+        $markers = [];
+        foreach ($filtered_activities as $f) {
+            foreach ($f->getTasks() as $t) {
+                $m = new Marker($t->getId(),
+                                new LatLng($t->getLatitude(), $t->getLongitude()),
+                                $t->getTaskName(),
+                                $f->getFieldTitle());
+                array_push($markers, $m);
+            }
+        }
+
+        $view = $this->view(['result' => $markers], Response::HTTP_OK);
         return $this->handleView($view);
     }
 
