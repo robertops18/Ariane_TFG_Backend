@@ -41,7 +41,7 @@ class EmailService
         }
 
         $email = \Swift_Message::newInstance()
-            ->setSubject("Copese | ".$sub)
+            ->setSubject("Ariane | ".$sub)
             ->setFrom(array($this->contactMail => $this->projectName))
             ->setTo($user->getEmail())
             ->setBody($body, 'text/html');
