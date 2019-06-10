@@ -65,6 +65,7 @@ class TaskAdmin extends AbstractAdmin
     protected function configureFormFields(FormMapper $formMapper) {
         //$googlemap = new GoogleMapType("AIzaSyAvAte5AxaesDDFEULrtH4vfn4QGyGd60Y");
         $formMapper
+            ->add('fieldActivity')
             ->add('taskName')
             ->add('type', 'choice', array('label' => 'Type', 'choices' => TaskTypeEnum::getEnumArray()))
             ->add('description')
@@ -72,7 +73,6 @@ class TaskAdmin extends AbstractAdmin
             ->add('imageUrl', null, array('label' => 'Image URL'))
             ->add('options', null, array('label' => 'Options of the question (separated by semi-column (;))'))
             ->add('correctAnswer', null, array('label' => 'Correct option of the previous ones'))
-            ->add('fieldActivity')
             ->add('latlng', GoogleMapType::class,
                 array(
                     'label' => 'Position in map',

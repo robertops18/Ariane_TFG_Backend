@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ea2e220b-36f9-49d2-ac6d-6314191ce6a1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/email/emailResetPassword.email.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/email/emailResetPassword.email.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,8 +39,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Services/EmailService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="22" column="71" selection-start-line="22" selection-start-column="71" selection-end-line="22" selection-end-column="71" />
+            <state relative-caret-position="615">
+              <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -123,6 +122,8 @@
       <find>groupstudent</find>
       <find>incrementAnswers</find>
       <find>inversed</find>
+      <find>recovery</find>
+      <find>password</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -205,6 +206,7 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Task.php" />
         <option value="$PROJECT_DIR$/tests/AppBundle/Controller/EntityControllerTest.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/email/emailResetPassword.email.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Services/EmailService.php" />
       </list>
     </option>
   </component>
@@ -546,21 +548,7 @@
       <workItem from="1559855509035" duration="3062000" />
       <workItem from="1559981668856" duration="71000" />
       <workItem from="1560086519090" duration="7285000" />
-      <workItem from="1560184520503" duration="246000" />
-    </task>
-    <task id="LOCAL-00004" summary="Field Activities entity, admin and service">
-      <created>1553013576794</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1553013576794</updated>
-    </task>
-    <task id="LOCAL-00005" summary="* Logo&#10;* Alumnos profesor e instituto asociados a la salida de campo">
-      <created>1554649132027</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1554649132027</updated>
+      <workItem from="1560184520503" duration="435000" />
     </task>
     <task id="LOCAL-00006" summary="favicon">
       <created>1554649269805</created>
@@ -891,17 +879,30 @@
       <option name="project" value="LOCAL" />
       <updated>1560103565932</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Email template">
+      <created>1560184788879</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1560184788880</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Email subject">
+      <created>1560184875668</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1560184875668</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65905000" />
+    <option name="totallyTimeSpent" value="66094000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49795082" visible="true" weight="0.21405493" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49795082" visible="true" weight="0.21405493" />
       <window_info id="Structure" order="1" sideWeight="0.5020492" side_tool="true" weight="0.27382874" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -912,7 +913,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49919224" weight="0.31506848" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.49919224" visible="true" weight="0.31506848" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info active="true" anchor="bottom" id="Command Line Tools Console" order="10" sideWeight="0.49919224" visible="true" weight="0.39726028" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32876712" />
@@ -928,8 +929,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Componente de Mapa en el cuestionario de creación de Tasks" />
-    <MESSAGE value="use statement" />
     <MESSAGE value="LatLng en listado" />
     <MESSAGE value="Type Opinion" />
     <MESSAGE value="Assign field activity to answer" />
@@ -953,7 +952,9 @@
     <MESSAGE value="Image URL to the tasks" />
     <MESSAGE value="Entity unit testing" />
     <MESSAGE value="Number of answers in task changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Number of answers in task changed" />
+    <MESSAGE value="Email template" />
+    <MESSAGE value="Email subject" />
+    <option name="LAST_COMMIT_MESSAGE" value="Email subject" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/web/logo.png">
@@ -1210,9 +1211,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
           <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
-          <folding>
-            <element signature="e#46#68#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1322,8 +1320,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Services/EmailService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="22" column="71" selection-start-line="22" selection-start-column="71" selection-end-line="22" selection-end-column="71" />
+        <state relative-caret-position="615">
+          <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
         </state>
       </provider>
     </entry>
