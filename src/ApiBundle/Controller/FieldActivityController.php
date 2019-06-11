@@ -135,14 +135,19 @@ class FieldActivityController extends FOSRestController
         }
 
         $markers = [];
+        $colors = ['red', 'blue', 'yellow', 'pink', 'orange', 'black', 'white'];
+        $index = 0;
         foreach ($filtered_activities as $f) {
+            $color = '#' . substr(md5(mt_rand()), 0, 6);
             foreach ($f->getTasks() as $t) {
                 $m = new Marker($t->getId(),
                                 new LatLng($t->getLatitude(), $t->getLongitude()),
                                 $t->getTaskName(),
-                                $f->getFieldTitle());
+                                $f->getFieldTitle(),
+                                $color);
                 array_push($markers, $m);
             }
+            $index++;
         }
 
         $view = $this->view(['result' => $markers], Response::HTTP_OK);

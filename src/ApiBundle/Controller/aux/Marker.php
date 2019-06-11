@@ -15,6 +15,7 @@ class Marker
     protected $latlng;
     protected $title;
     protected $description;
+    protected $color;
 
     /**
      * Marker constructor.
@@ -22,13 +23,31 @@ class Marker
      * @param $latlng
      * @param $title
      * @param $description
+     * @param $color
      */
-    public function __construct($key, $latlng, $title, $description)
+    public function __construct($key, $latlng, $title, $description, $color)
     {
         $this->key = $key;
         $this->latlng = $latlng;
         $this->title = $title;
         $this->description = $description;
+        $this->color = $color;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getColor()
+    {
+        return $this->color;
+    }
+
+    /**
+     * @param mixed $color
+     */
+    public function setColor($color)
+    {
+        $this->color = $color;
     }
 
     /**
