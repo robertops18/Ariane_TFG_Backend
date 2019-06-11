@@ -262,7 +262,7 @@ class UserController extends FOSRestController
         $em->persist($user);
         $em->flush();
 
-        $view = $this->view(['message' => "Revise su correo que le ha llegado un email con las indicaciones para restablecer la contraseña"], Response::HTTP_OK);
+        $view = $this->view(['message' => $user->getEmail().": Revise su correo que le ha llegado un email con las indicaciones para restablecer la contraseña"], Response::HTTP_OK);
         return $this->handleView($view);
 
     }
