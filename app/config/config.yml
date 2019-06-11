@@ -355,7 +355,7 @@ sonata_admin:
                 class: col-md-12
                 settings:
                     content: >
-                        <div class="alert alert-info" style="margin:40px 0 0 0"><p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>&nbsp;para ayuda o soporte: <a href="mailto:devel@gooapps.net?subject=support">Contacto</a></p></div>
+                        <div class="alert alert-info" style="margin:40px 0 0 0"><p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>&nbsp;para ayuda o soporte: <a href="mailto:arianeuniovi@gmail.com?subject=support">Contacto</a></p></div>
             -
                 position: left
                 type: sonata.admin.block.admin_list

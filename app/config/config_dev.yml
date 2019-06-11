@@ -42,4 +42,3 @@ swiftmailer:
     mailers:
         instant:
             disable_delivery:  false
-            delivery_address: %contactmail%
