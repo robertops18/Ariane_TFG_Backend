@@ -39,6 +39,11 @@ class FieldActivity extends Base
     protected $area;
 
     /**
+     * @ORM\Column(name="demo", type="boolean")
+     */
+    protected $demo;
+
+    /**
      * @ORM\ManyToOne(targetEntity="AppBundle\Entity\StudentsGroup")
      * @ORM\JoinColumn(name="students_group_id", referencedColumnName="id")
      */
@@ -62,6 +67,22 @@ class FieldActivity extends Base
     public function __toString()
     {
         return (string) $this->getFieldTitle();
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDemo()
+    {
+        return $this->demo;
+    }
+
+    /**
+     * @param mixed $demo
+     */
+    public function setDemo($demo)
+    {
+        $this->demo = $demo;
     }
 
     /**

@@ -31,6 +31,7 @@ class FieldAdmin extends AbstractAdmin
     protected function configureDatagridFilters(DatagridMapper $datagridMapper) {
         $datagridMapper
             ->add('id')
+            ->add('demo')
             ->add('fieldTitle')
             ->add('initDate', 'doctrine_orm_date_range',
                 array('label' => 'Init Date',
@@ -51,6 +52,7 @@ class FieldAdmin extends AbstractAdmin
     protected function configureListFields(ListMapper $listMapper) {
         $listMapper
             ->add('id')
+            ->add('demo', null, ['editable' => true])
             ->add('fieldTitle')
             ->add('initDate')
             ->add('finishDate')
@@ -71,6 +73,7 @@ class FieldAdmin extends AbstractAdmin
     protected function configureFormFields(FormMapper $formMapper) {
         $formMapper
             ->add('fieldTitle')
+            ->add('demo')
             ->add('initDate')
             ->add('finishDate')
             ->add('area', null, array('label' => 'Area (City, Country)'))
@@ -83,6 +86,7 @@ class FieldAdmin extends AbstractAdmin
         $showMapper
             ->add('id')
             ->add('fieldTitle')
+            ->add('demo')
             ->add('initDate')
             ->add('finishDate')
             ->add('area')
