@@ -24,7 +24,8 @@ class StudentsGroup extends Base
     protected $groupName;
 
     /**
-     * @ORM\OneToMany(targetEntity="Application\Sonata\UserBundle\Entity\User", mappedBy="studentsGroup")
+     * Many groups have Many Students.
+     * @ORM\ManyToMany(targetEntity="Application\Sonata\UserBundle\Entity\User", mappedBy="studentsGroups")
      */
     protected $students;
 

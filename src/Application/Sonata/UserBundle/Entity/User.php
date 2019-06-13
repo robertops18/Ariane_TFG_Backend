@@ -23,25 +23,26 @@ class User extends BaseUser
     protected $avatar;
 
     /**
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\StudentsGroup", inversedBy="students")
-     * @ORM\JoinColumn(name="students_group_id", referencedColumnName="id")
+     * Many Users have Many Groups.
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\StudentsGroup", inversedBy="students")
+     * @ORM\JoinTable(name="students_belongs_to_groups")
      */
-    protected $studentsGroup;
+    protected $studentsGroups;
 
     /**
      * @return mixed
      */
-    public function getStudentsGroup()
+    public function getStudentsGroups()
     {
-        return $this->studentsGroup;
+        return $this->studentsGroups;
     }
 
     /**
-     * @param mixed $studentsGroup
+     * @param mixed $studentsGroups
      */
-    public function setStudentsGroup($studentsGroup)
+    public function setStudentsGroups($studentsGroups)
     {
-        $this->studentsGroup = $studentsGroup;
+        $this->studentsGroups = $studentsGroups;
     }
 
     /**

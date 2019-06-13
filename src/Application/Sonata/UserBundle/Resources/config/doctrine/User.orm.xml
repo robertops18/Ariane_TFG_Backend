@@ -16,8 +16,16 @@
             </cascade>
         </many-to-one>
 
-        <many-to-one field="studentsGroup" target-entity="AppBundle\Entity\StudentsGroup" inversed-by="students" />
-
+        <many-to-many field="studentsGroups" inversed-by="students" target-entity="AppBundle\Entity\StudentsGroup">
+            <join-table name="students_belongs_to_groups">
+                <join-columns>
+                    <join-column name="user_id" referenced-column-name="id" />
+                </join-columns>
+                <inverse-join-columns>
+                    <join-column name="group_id" referenced-column-name="id" />
+                </inverse-join-columns>
+            </join-table>
+        </many-to-many>
     </entity>
 
 </doctrine-mapping>

@@ -87,7 +87,7 @@ class UserAdmin extends AbstractAdmin
             ->addIdentifier('username')
             ->add('email')
             ->add('groups', null, ['label' => 'Role'])
-            ->add('studentsGroup', null, ['label' => 'Students group'])
+            ->add('studentsGroups', null, ['label' => 'Students group'])
             ->add('enabled', null, ['editable' => true])
             ->add('createdAt')
         ;
@@ -102,7 +102,7 @@ class UserAdmin extends AbstractAdmin
             ->add('username')
             ->add('email')
             ->add('groups')
-            ->add('studentsGroup', null, ['label' => 'Students group'])
+            ->add('studentsGroups', null, ['label' => 'Students group'])
         ;
     }
 
@@ -118,7 +118,7 @@ class UserAdmin extends AbstractAdmin
             ->end()
             ->with('Groups')
             ->add('groups')
-            ->add('studentsGroup', null, ['label' => 'Students group'])
+            ->add('studentsGroups', null, ['label' => 'Students group'])
             ->end()
             ->with('Profile')
             ->add('firstname')
@@ -165,7 +165,7 @@ class UserAdmin extends AbstractAdmin
             ->add('plainPassword', TextType::class, [
                 'required' => (!$this->getSubject() || null === $this->getSubject()->getId()),
             ])
-            ->add('studentsGroup', null, ['label' => 'Students group'])
+            ->add('studentsGroups', null, ['label' => 'Students group'])
             ->end()
             ->with('Profile')
             ->add('firstname', null, ['required' => false])
