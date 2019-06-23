@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea2e220b-36f9-49d2-ac6d-6314191ce6a1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/parameters.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/parameters.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/parameters.yml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/parameters.yml.dist" afterDir="false" />
-    </list>
+    <list default="true" id="ea2e220b-36f9-49d2-ac6d-6314191ce6a1" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +56,7 @@
         <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="465">
-              <caret line="31" column="31" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="31" selection-end-column="31" />
+              <caret line="31" column="31" selection-start-line="7" selection-start-column="4" selection-end-line="31" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -68,8 +64,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <state relative-caret-position="135">
+              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -580,14 +576,7 @@
       <workItem from="1560190413939" duration="1833000" />
       <workItem from="1560251082571" duration="3297000" />
       <workItem from="1560255671135" duration="1137000" />
-      <workItem from="1560441353669" duration="2882000" />
-    </task>
-    <task id="LOCAL-00013" summary="Task types, toStrings y task description">
-      <created>1558616858198</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1558616858198</updated>
+      <workItem from="1560441353669" duration="3222000" />
     </task>
     <task id="LOCAL-00014" summary="TaskType valoracion">
       <created>1558617365902</created>
@@ -925,17 +914,23 @@
       <option name="project" value="LOCAL" />
       <updated>1560448718556</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Default parameters">
+      <created>1560450245849</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1560450245849</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75243000" />
+    <option name="totallyTimeSpent" value="75583000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49795082" visible="true" weight="0.226979" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49795082" visible="true" weight="0.226979" />
       <window_info id="Structure" order="1" sideWeight="0.5020492" side_tool="true" weight="0.27382874" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -946,9 +941,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49919224" weight="0.31506848" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.49919224" visible="true" weight="0.31506848" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Command Line Tools Console" order="10" sideWeight="0.49919224" visible="true" weight="0.17671233" />
+      <window_info anchor="bottom" id="Command Line Tools Console" order="10" sideWeight="0.49919224" weight="0.17671233" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32876712" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50080776" side_tool="true" weight="0.31917807" />
       <window_info anchor="bottom" id="Messages" order="13" />
@@ -962,7 +957,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Tipo audio" />
     <MESSAGE value="Preguntas de tipo test: opciones y respuesta correcta añadido al modelo" />
     <MESSAGE value="TIPO YOUTUBE" />
     <MESSAGE value="Video 360" />
@@ -987,7 +981,8 @@
     <MESSAGE value="Colors on markers" />
     <MESSAGE value="Demo in field activity" />
     <MESSAGE value="ManyToMany en students y groups" />
-    <option name="LAST_COMMIT_MESSAGE" value="ManyToMany en students y groups" />
+    <MESSAGE value="Default parameters" />
+    <option name="LAST_COMMIT_MESSAGE" value="Default parameters" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/vendor/krixer/google-map-form-type-bundle/Form/Type/GoogleMapType.php">
@@ -1336,14 +1331,14 @@
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
-          <caret line="31" column="31" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="31" selection-end-column="31" />
+          <caret line="31" column="31" selection-start-line="7" selection-start-column="4" selection-end-line="31" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        <state relative-caret-position="135">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
         </state>
       </provider>
     </entry>
